@@ -12,11 +12,11 @@ use ::freetype::Face;
 
 #[derive(Debug)]
 pub struct BitmapFont {
-    width: u16,
-    height: u16,
-    chars: HashMap<char, BitmapChar>,
+    pub width: u16,
+    pub height: u16,
+    pub chars: HashMap<char, BitmapChar>,
     image: Vec<u8>,
-    font_height: u16,
+    pub font_height: u16,
 }
 
 #[derive(Debug)]
