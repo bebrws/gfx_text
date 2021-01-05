@@ -128,7 +128,7 @@ pub struct Renderer<R: Resources, F: Factory<R>> {
     vertex_buffer: Buffer<R, Vertex>,
     index_data: Vec<IndexT>,
     index_buffer: Buffer<R, IndexT>,
-    font_bitmap: BitmapFont,
+    pub font_bitmap: BitmapFont,
     color: (gfx::handle::ShaderResourceView<R, f32>, gfx::handle::Sampler<R>),
 }
 
